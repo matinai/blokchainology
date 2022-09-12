@@ -79,6 +79,10 @@ nav a:hover {
   border-bottom: 3px solid white;
 }
 
+.navris{
+  display: none;
+}
+
 /* btn style start */
 .btn:link,
 .btn:visited {
@@ -155,47 +159,6 @@ nav a:hover {
   transform: scale(0.8);
 }
 
-.input-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.input-container input {
-  margin: 10px;
-  border: none;
-  border-bottom: 2px solid rgb(193, 182, 182);
-}
-
-.input-container input:hover {
-  border-bottom: 3px solid gray;
-}
-
-.input-container input:focus {
-  outline: none;
-  border-bottom: 3px solid rgb(83, 83, 200);
-}
-
-.input-container button {
-  width: 8rem;
-  color: white;
-  background-color: #020f45;
-  border: 2px solid #020f45;
-  border-radius: 2rem;
-}
-
-.input-container button:hover {
-  background-color: #18076b;
-  border: 2px solid #18076b;
-}
-
-.input-container button:active {
-  transform: translateY(2px);
-}
-
-hr {
-  margin: 0;
-}
-
 .modalA {
   display: none;
   background-color: white !important;
@@ -227,17 +190,30 @@ hr {
   font-weight: 700;
 }
 
-nav2 {
-  width: 100%;
-  display: none !important;
-  height: 4rem;
-  background-color: #18076b;
-}
-
-nav2 .navbar-toggler {
+.navbar-toggler {
   margin-top: 0.5rem !important;
   margin-right: 1.5rem;
   transition: all 0.3s;
+  padding: 7px;
+  border-radius: 8px;
+}
+.nav-link {
+  color: #7a00ca !important;
+  transition: all 0.2s;
+}
+
+.nav-link:hover {
+  border-bottom:2px solid #9600f7 ;
+}
+
+.btn-close {
+  position: absolute;
+  transition: all 1s;
+  right: 15px;
+}
+
+.btn-close:hover {
+  transform: rotate(90deg) translateZ(0);
 }
 
 .navbar-toggler:hover {
@@ -567,14 +543,6 @@ footer a:hover {
 }
 
 @media screen and (max-width: 1008px) {
-  nav {
-    display: none;
-  }
-
-  nav2 {
-    display: block !important;
-  }
-
   section1 {
     height: auto;
     flex-direction: column;
@@ -635,6 +603,24 @@ footer a:hover {
   section4 li {
     font-size: 1.2em;
   }
+
+  .modalc {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .rightcontainer{
+    display:none;
+  }
+  .navris {
+    display: block !important ;
+  }
+  .modalc {
+    width:75%;
+    position: absolute;
+    right: 0;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -651,4 +637,14 @@ footer a:hover {
     margin-top: -1rem;
     width: 300px;
   }
+  .card{
+    border-radius: 250%;
+  }
+  .modalc {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+  }
+
 }

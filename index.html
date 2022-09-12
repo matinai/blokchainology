@@ -27,6 +27,56 @@
           <a href="#partners" style="margin-right: 0.5rem" onclick="closemc()">Team</a>
           <a href="#page-top" class="btn" onclick="SMD()">Contact Us</a>
         </div>
+        <div class="navris">
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          style="border: 2px solid white "
+        >
+          <span style="background-color: transparent; padding: 10px; color: #f0e2f1;">Menu</span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+          style="background-color:rgb(243, 231, 241); width: 15rem;"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#page-top" onclick="closemc()">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#service" onclick="closemc()">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="MA()">Abilities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#partners" onclick="closemc()">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#page-top" onclick="SMD()">Contact us</a>
+              </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
       </div>
       <!-- modal Contact -->
       <span class="modalc">
@@ -40,11 +90,6 @@
         <div class="itemc">
           <div style="flex: 2;"><h5 style="margin-top: 1.6rem;">Send Resume :</h5></div>
           <div class="input-container" style="flex: 3;">
-            <input type="text" placeholder="name" pattern="name">
-            <input type="text" placeholder="email" pattern="email">
-            <input type="text" placeholder="phone(optional)" pattern="phone(optional)">
-            <input type="text" placeholder="details(optional)" pattern="details(optional)">
-            <button>Submit</button>
           </div>
         </div> 
       </span> 
@@ -90,59 +135,6 @@
         </span>
       </span>
     </nav>
-    <nav2 class="navbar fixed-top">
-      <div class="container-fluid">
-        <img src="logo-1.png" alt="logo" width="40px">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-          style="border: 2px solid white "
-        >
-          <span style="background-color: transparent; padding: 10px; color: #f0e2f1;">Menu</span>
-        </button>
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-          style="background-color:rgb(243, 231, 241); width: 15rem;"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#page-top">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#service">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Abilities</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#partners">Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#page-top">Contact us</a>
-              </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav2>
     <section1 onclick="closemc()">
       <div class="text">
         <h1>

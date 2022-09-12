@@ -44,6 +44,7 @@ let i = 0;
 let x;
 function SMD() {
   x = i++;
+  closeA();
   if (x % 2 == 0) {
     modalc.style.display = "inline-block";
   } else {
@@ -60,10 +61,16 @@ let b = 0;
 let y;
 function MA() {
   y = b++;
+  closemc();
   if (y % 2 == 0) {
     modalA.style.display = "inline-block";
   } else {
     modalA.style.display = "none";
   }
+}
+
+function closeA() {
+  y = b++ ;
+  modalA.style.display = "none";
 }
 
