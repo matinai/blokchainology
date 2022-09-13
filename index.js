@@ -57,10 +57,10 @@ function closemc() {
   modalc.style.display = "none";
 }
 
-let b = 0;
+let m = 0;
 let y;
 function MA() {
-  y = b++;
+  y = m++;
   closemc();
   if (y % 2 == 0) {
     modalA.style.display = "inline-block";
@@ -70,7 +70,7 @@ function MA() {
 }
 
 function closeA() {
-  y = b++ ;
+  y = m++ ;
   modalA.style.display = "none";
 }
 
